@@ -1,0 +1,25 @@
+
+
+
+
+
+body {
+
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    width: 100%;
+
+}
+
+
+
+
+
