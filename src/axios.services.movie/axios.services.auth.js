@@ -1,13 +1,13 @@
 
 import {axiosService} from "./axios.service";
-import {urls} from "../constants";
+import {urlsm} from "../constants/urls";
 
 
 const  _accesTokenKey = 'access'
 const  _refreshTokenKey = 'refresh'
 export const authService = {
-    login: (user) => axiosService.post(urls.auth, user),
-    register: (user) => axiosService.post(urls.users, user),
+    login: (user) => axiosService.post(urlsm.auth, user),
+    register: (user) => axiosService.post(urlsm.users, user),
 
     setTokens: ({access, refresh}) => {
         localStorage.setItem(_accesTokenKey,access)

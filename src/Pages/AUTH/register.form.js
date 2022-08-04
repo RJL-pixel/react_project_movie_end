@@ -1,28 +1,62 @@
-
+import './reg.css'
 import {useForm} from "react-hook-form";
 import {useDispatch} from "react-redux";
 import {authActions} from "../../redux";
+import {useNavigate} from "react-router-dom";
 
 function RegisterForm() {
     const {register, handleSubmit} = useForm()
 const dispatch = useDispatch();
-
+const navigate = useNavigate()
 const submit = async (data) =>{
-    const r =  await dispatch(authActions.register({user:data}));
-    console.log(r)
+    const {error} =  await dispatch(authActions.register({user:data}));
+if(!error){
+navigate('/login')
+}
 };
 
 
 
+
+
+
+
     return (
+        <div className="login-box">
+            <h2>Register</h2>
         <form onSubmit={handleSubmit(submit)}>
+            <div className="user-box">
         <input type={"text"} placeholder={'username'} {...register('username')}/>
-
+            </div>
+            <div className="user-box">
             <input type={"text"} placeholder={'password'} {...register('password')}/>
+            </div>
+           <button>
+            <a>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+               Submit
+            </a>
+        </button>
 
-               <button>Register</button>
+
         </form>
+        </div>
+
+
+
+
+
+
+
+
     )
+
+
+
+
 
 
 }
