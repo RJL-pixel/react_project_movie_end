@@ -38,10 +38,10 @@ export const MoviesList = () => {
 
     return (
         <div>
-            <div className={css.movies}>{results && results.map((movie) => <Movie key={movie.id} movie={movie}/>)}</div>
-            <div className={css.pageBtn}>
-                <button className={css.glowOnHover} onClick={prevPage}>❮Prev</button>
-                <button className={css.glowOnHover} onClick={nextPage}>Next❯</button>
+            <div className={'movies'}>{results && results.map((movie) => <Movie key={movie.id} movie={movie}/>)}</div>
+            <div className={'pageBtn'}>
+                <button id={`${css.button}`}  onClick={prevPage}>❮Prev</button>
+                <button id={`${css.button}`}  onClick={nextPage}>Next❯</button>
             </div>
         </div>
     );

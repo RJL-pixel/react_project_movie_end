@@ -1,5 +1,6 @@
 
 .head_main {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -10,7 +11,11 @@
 }
 
 
-
+.checkbox{
+    background-color: #03e9f4;
+    width: 50px;
+    height: 50px;
+}
 
 
 
@@ -22,15 +27,6 @@
 body{
 
    display: flex;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -176,8 +172,7 @@ body{
     font-size: 15px;
     border-radius: 2px;
     padding: 5px 0;
-    padding-left: 20px;
-    padding-right: 15px;
+
     margin: 2px 0;
     text-align: left;
     text-decoration: none;
@@ -239,3 +234,24 @@ body{
         right: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

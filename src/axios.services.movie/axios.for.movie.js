@@ -6,16 +6,17 @@ export const axiosService = axios.create(
     {
         baseURL,
 
-
-
-
         headers:{
-            'Authorization': `Bearer ${process.env.REACT_APP_KEY}`
+            'Authorization':`Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMmZkODQyODZlYjJkOTg2Yzk4MzExMjIwMTRmMDE1NiIsInN1YiI6IjYyZTc5ODEwN2NhYTQ3MDA1ZTg2ODlmZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3RodizC-wpChWJLDVCtZi_AgAYaTaU5xozxJQtT0fQs`
         }
     });
 
 
 
+
+export const genreService = {
+    getAllGenres: () => axiosService.get(urls.genres)
+}
 
 
 
@@ -26,4 +27,6 @@ export const movieService = {
 
 
 }
+
+
 

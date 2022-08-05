@@ -15,11 +15,24 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1em 2em;
-    width: 100%;
+
 
 }
 
 
 
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #181a1a;
+    --btn-txt-color: rgb(46, 43, 43);
+    --btn-bg-color: rgb(20, 211, 195);
+    background-image: url("https://funart.pro/uploads/posts/2021-12/1640256783_3-funart-pro-p-foni-dlya-saitov-3.jpg");
+}
+
+body {
+
+    background: linear-gradient(#141e30, #243b55);
+}
 
 

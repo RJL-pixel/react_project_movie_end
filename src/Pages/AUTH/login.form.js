@@ -17,7 +17,7 @@ function LoginForm()  {
         const {error} = await dispatch(authActions.login({user: data}));
 
         if (!error) {
-            navigate('/header')
+            navigate('/movies')
         }
     };
 
